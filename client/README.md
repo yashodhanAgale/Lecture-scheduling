@@ -29,7 +29,7 @@ lectures Table: Stores lecture details such as course_name, instructor_name, and
 3. API Endpoints
    Authentication:
 
-POST /api/auth/signup: Allows users to sign up with their email, password, fullName, dateOfBirth, and gender. The status is set to 'inactive' by default.
+POST /api/auth/signup: Allows users to sign up with their email, password, role.
 
 POST /api/auth/login: Authenticates users using email and password, returning a JWT token on successful login.
 Courses:
@@ -69,7 +69,7 @@ pages/: Contains page-specific components like the Instructor Dashboard, Login, 
 2. Authentication
 
 Login: The login form authenticates the user using the email and password. Upon successful login, a JWT token is stored in localStorage, and the user is redirected to the instructor dashboard.
-Signup: The signup form allows the user to register with email, password, fullName, dateOfBirth, and gender. Upon successful signup, the user is redirected to the login page.
+Signup: The signup form allows the user to register with email, password, role. Upon successful signup, the user is redirected to the login page.
 
 3. Instructor Dashboard
    Sidebar Navigation: The sidebar contains links to the "Overview", "My Courses", "Upcoming Lectures", and "Profile Settings".
