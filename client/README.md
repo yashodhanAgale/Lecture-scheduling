@@ -22,10 +22,9 @@ Used for storing user data, courses, lectures, and assessment results.
 Configured using MySQL2 and connected via environment variables.
 Database Tables:
 
-users Table: Contains user details such as email, password, fullName, dateOfBirth, gender, and status (default set to 'inactive').
+users Table: Contains user details such as email, password, role.
 courses Table: Stores course information (e.g., course_name, instructor_name).
 lectures Table: Stores lecture details such as course_name, instructor_name, and date.
-assessment Table: Stores the assessment results (domain-wise scores) for each user.
 
 3. API Endpoints
    Authentication:
@@ -61,13 +60,11 @@ Frontend Tasks -
 1. Project Structure
    src/: Contains all React components, routing, and styling.
 
-App.jsx: Main component for routing and layout.
+main.jsx: Main component for routing and layout.
 
 components/: Contains reusable components like forms, buttons, and modals.
 
 pages/: Contains page-specific components like the Instructor Dashboard, Login, Signup, and Assessment pages.
-
-assets/: Stores images, fonts, and other static resources.
 
 2. Authentication
 
